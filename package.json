@@ -1,0 +1,34 @@
+{
+  "name": "react-electron-template",
+  "version": "1.0.0",
+  "description": "A minimal React Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ./public/main.js",
+    "watch": "brunch watch --server -P 3001",
+    "build": "electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --prune --asar --all --version=$npm_package_electronVersion"
+  },
+  "repository": "https://github.com/emischorr/react-electron-template",
+  "keywords": [
+    "electron",
+    "react"
+  ],
+  "author": "Enrico Mischorr",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "babel-brunch": "^6.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "brunch": "^2.10.12",
+    "clean-css-brunch": "^2.10.0",
+    "electron": "^2.0.0",
+    "electron-packager": "^12.1.0",
+    "sass-brunch": "^2.10.4",
+    "uglify-js-brunch": "^2.10.0"
+  },
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  }
+}
